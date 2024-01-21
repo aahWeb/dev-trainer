@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<ul>
+    {% for trainer in trainers %}
+    <li>
+        {{ trainer.name }}
+        {{ trainer.star }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
